@@ -1,5 +1,5 @@
 import { getAllMovies } from "../data/movies";
-import MovieCart from "./MovieCart";
+import MovieCard from "./MovieCard";
 
 const MovieList = () => {
   const movies = getAllMovies();
@@ -7,7 +7,7 @@ const MovieList = () => {
     <div className="content">
       <div className="grid sm:grid-cols-2 xl:grid-cols-3 gap-7">
         {movies.map((movie) => (
-          <MovieCart movie={movie} key={movie.id} />
+          <MovieCard movie={movie} key={movie.id} />
         ))}
       </div>
     </div>
